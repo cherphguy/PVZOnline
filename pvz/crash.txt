@@ -1,0 +1,26 @@
+Exception: Access Violation (code 0xc0000005) at address 00587120 in thread 165C
+Module: PlantsVsZombies.exe
+Logical Address: 0001:00186120
+
+0019F990 00587120 0001:00186120 PlantsVsZombies.exe
+Params: 0019FA98 423366D4 0019FA98 1076B3F8
+
+
+EAX:423366D4 EBX:0019FA8C ECX:423366D4 EDX:00484690 ESI:423366D4 EDI:0019FA98
+EIP:00587120 ESP:0019F948  EBP:0019F990
+CS:0023 SS:002B DS:002B ES:002B FS:0053 GS:002B
+Flags:00010286
+
+Windows Ver: NT 6.2  Build 9200
+DDraw Ver: 10.0.19041.1
+DSound Ver: 10.0.19041.1
+
+Product: PlantsVsZombies
+Version: 1.0.0.1051
+Time Loaded: 00:00:37
+Fullscreen: No
+Primary ThreadId: 165C
+Times Played: 0
+Build Num: 0
+Build Date: 
+
