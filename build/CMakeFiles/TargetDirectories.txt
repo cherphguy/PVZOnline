@@ -1,3 +1,0 @@
-C:/PVZOnline/build/CMakeFiles/mod.dir
-C:/PVZOnline/build/CMakeFiles/edit_cache.dir
-C:/PVZOnline/build/CMakeFiles/rebuild_cache.dir
