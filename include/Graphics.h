@@ -9,7 +9,7 @@ public:
 	FVector2 mTranslation;
 	FVector2 mScale;
 	FVector2 mScaleOrig;
-	IRect mClipRect;
+	Sexy::Rect<int> mClipRect;
 	Color mColor;
 	Font* mFont;
 	int mDrawMode;
@@ -62,4 +62,10 @@ public:
 	void DrawString(const PopString&, int X, int Y);
 	int WriteWordWrapped(const PopString&, const IRect& TextArea, int LineSpacing = -1, Alignment = CENTER);
 	int GetWrappedWordHeight(const PopString&, int TextAreaWidth, int LineSpacing);
+
+	void ClearClipRect()
+	{
+		CONST DWORD Function = 0x587760;
+		__asm { call Function }
+	}
 };

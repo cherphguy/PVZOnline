@@ -202,11 +202,14 @@ public:
 		return Rect(mX - O.mX, mY - O.mY, mW - O.mW, mH - O.mH);
 	}
 
+
 	template <typename T>
 	operator Rect<T>() const
 	{
 		return Rect<T>((T)mX, (T)mY, (T)mW, (T)mH);
 	}
+	Rect& operator=(const Rect&) = default;
+	Rect(const Rect&) = default;
 };
 
 template <typename N>
