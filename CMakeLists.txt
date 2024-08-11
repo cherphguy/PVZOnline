@@ -14,7 +14,7 @@ file(GLOB_RECURSE HEADERS "include/*.h" "include/*.hpp")
 
 # Create the shared library
 add_library(PVZOnline SHARED ${SRC_FILES} ${HEADERS} )
-set_property(TARGET PVZOnline PROPERTY CXX_STANDARD 20)
+set_property(TARGET PVZOnline PROPERTY CXX_STANDARD 23)
 
 # Include directories for PVZOnline
 target_include_directories(PVZOnline PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

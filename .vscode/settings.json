@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "xstring": "cpp",
+        "exception": "cpp",
+        "expected": "cpp",
+        "string": "cpp"
+    }
+}

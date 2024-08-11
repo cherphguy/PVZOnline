@@ -1,15 +1,15 @@
-Exception: Access Violation (code 0xc0000005) at address 00588A10 in thread 4160
+Exception: Access Violation (code 0xc0000005) at address 004846BD in thread 2CC4
 Module: PlantsVsZombies.exe
-Logical Address: 0001:00187A10
+Logical Address: 0001:000836BD
 
-0019F990 00588A10 0001:00187A10 PlantsVsZombies.exe
-Params: 0019FA98 E9F6989B 0019FA98 107216D0
+0019F97C 004846BD 0001:000836BD PlantsVsZombies.exe
+Params: 0019FA98 106F1328 025C0FE0 0019FA4C
 
 
-EAX:00000000 EBX:0019FA8C ECX:107216D0 EDX:00000000 ESI:00000000 EDI:00000000
-EIP:00588A10 ESP:0019F944  EBP:0019F990
+EAX:8D550000 EBX:0019FA8C ECX:005F0066 EDX:00484690 ESI:0019FA98 EDI:106F1328
+EIP:004846BD ESP:0019F8C4  EBP:0019F97C
 CS:0023 SS:002B DS:002B ES:002B FS:0053 GS:002B
-Flags:00010246
+Flags:00010206
 
 Windows Ver: NT 6.2  Build 9200
 DDraw Ver: 10.0.19041.1
@@ -17,9 +17,9 @@ DSound Ver: 10.0.19041.1
 
 Product: PlantsVsZombies
 Version: 1.0.0.1051
-Time Loaded: 00:00:30
+Time Loaded: 00:00:12
 Fullscreen: No
-Primary ThreadId: 4160
+Primary ThreadId: 2CC4
 Times Played: 0
 Build Num: 0
 Build Date: 

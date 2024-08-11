@@ -1,3 +1,12 @@
-C:/PVZOnline/pvz/CMakeFiles/mod.dir
+C:/PVZOnline/pvz/CMakeFiles/PVZOnline.dir
 C:/PVZOnline/pvz/CMakeFiles/edit_cache.dir
 C:/PVZOnline/pvz/CMakeFiles/rebuild_cache.dir
+C:/PVZOnline/pvz/CMakeFiles/list_install_components.dir
+C:/PVZOnline/pvz/CMakeFiles/install.dir
+C:/PVZOnline/pvz/CMakeFiles/install/local.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/minhook.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/edit_cache.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/rebuild_cache.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/list_install_components.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/install.dir
+C:/PVZOnline/pvz/libs/minhook/CMakeFiles/install/local.dir

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: mod
+# Project: PVZOnline
 # Configurations: Release
 # =============================================================================
 
@@ -41,52 +41,79 @@ include CMakeFiles\rules.ninja
 
 cmake_ninja_workdir = C$:\PVZOnline\pvz\
 # =============================================================================
-# Object build statements for SHARED_LIBRARY target mod
+# Object build statements for SHARED_LIBRARY target PVZOnline
 
 
 #############################################
-# Order-only phony target for mod
+# Order-only phony target for PVZOnline
 
-build cmake_object_order_depends_target_mod: phony || CMakeFiles\mod.dir
+build cmake_object_order_depends_target_PVZOnline: phony || cmake_object_order_depends_target_minhook
 
-build CMakeFiles\mod.dir\src\Logger.cpp.obj: CXX_COMPILER__mod_unscanned_Release C$:\PVZOnline\src\Logger.cpp || cmake_object_order_depends_target_mod
-  DEFINES = -Dmod_EXPORTS
+build CMakeFiles\PVZOnline.dir\src\CGeometry.cpp.obj: CXX_COMPILER__PVZOnline_unscanned_Release C$:\PVZOnline\src\CGeometry.cpp || cmake_object_order_depends_target_PVZOnline
+  DEFINES = -DPVZOnline_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20
-  INCLUDES = -IC:\PVZOnline\include
-  OBJECT_DIR = CMakeFiles\mod.dir
-  OBJECT_FILE_DIR = CMakeFiles\mod.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\mod.dir\
-  TARGET_PDB = mod.pdb
+  INCLUDES = -IC:\PVZOnline\include -IC:\PVZOnline\libs\minhook\include
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
+  OBJECT_FILE_DIR = CMakeFiles\PVZOnline.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_PDB = PVZOnline.pdb
 
-build CMakeFiles\mod.dir\src\dllmain.cpp.obj: CXX_COMPILER__mod_unscanned_Release C$:\PVZOnline\src\dllmain.cpp || cmake_object_order_depends_target_mod
-  DEFINES = -Dmod_EXPORTS
+build CMakeFiles\PVZOnline.dir\src\DialogButton.cpp.obj: CXX_COMPILER__PVZOnline_unscanned_Release C$:\PVZOnline\src\DialogButton.cpp || cmake_object_order_depends_target_PVZOnline
+  DEFINES = -DPVZOnline_EXPORTS
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20
-  INCLUDES = -IC:\PVZOnline\include
-  OBJECT_DIR = CMakeFiles\mod.dir
-  OBJECT_FILE_DIR = CMakeFiles\mod.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\mod.dir\
-  TARGET_PDB = mod.pdb
+  INCLUDES = -IC:\PVZOnline\include -IC:\PVZOnline\libs\minhook\include
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
+  OBJECT_FILE_DIR = CMakeFiles\PVZOnline.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_PDB = PVZOnline.pdb
+
+build CMakeFiles\PVZOnline.dir\src\Graphics.cpp.obj: CXX_COMPILER__PVZOnline_unscanned_Release C$:\PVZOnline\src\Graphics.cpp || cmake_object_order_depends_target_PVZOnline
+  DEFINES = -DPVZOnline_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20
+  INCLUDES = -IC:\PVZOnline\include -IC:\PVZOnline\libs\minhook\include
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
+  OBJECT_FILE_DIR = CMakeFiles\PVZOnline.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_PDB = PVZOnline.pdb
+
+build CMakeFiles\PVZOnline.dir\src\LawnApp.cpp.obj: CXX_COMPILER__PVZOnline_unscanned_Release C$:\PVZOnline\src\LawnApp.cpp || cmake_object_order_depends_target_PVZOnline
+  DEFINES = -DPVZOnline_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20
+  INCLUDES = -IC:\PVZOnline\include -IC:\PVZOnline\libs\minhook\include
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
+  OBJECT_FILE_DIR = CMakeFiles\PVZOnline.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_PDB = PVZOnline.pdb
+
+build CMakeFiles\PVZOnline.dir\src\dllmain.cpp.obj: CXX_COMPILER__PVZOnline_unscanned_Release C$:\PVZOnline\src\dllmain.cpp || cmake_object_order_depends_target_PVZOnline
+  DEFINES = -DPVZOnline_EXPORTS
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG -std:c++20
+  INCLUDES = -IC:\PVZOnline\include -IC:\PVZOnline\libs\minhook\include
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
+  OBJECT_FILE_DIR = CMakeFiles\PVZOnline.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_PDB = PVZOnline.pdb
 
 
 # =============================================================================
-# Link build statements for SHARED_LIBRARY target mod
+# Link build statements for SHARED_LIBRARY target PVZOnline
 
 
 #############################################
-# Link the shared library mod.dll
+# Link the shared library PVZOnline.dll
 
-build mod.dll mod.lib: CXX_SHARED_LIBRARY_LINKER__mod_Release CMakeFiles\mod.dir\src\Logger.cpp.obj CMakeFiles\mod.dir\src\dllmain.cpp.obj
+build PVZOnline.dll PVZOnline.lib: CXX_SHARED_LIBRARY_LINKER__PVZOnline_Release CMakeFiles\PVZOnline.dir\src\CGeometry.cpp.obj CMakeFiles\PVZOnline.dir\src\DialogButton.cpp.obj CMakeFiles\PVZOnline.dir\src\Graphics.cpp.obj CMakeFiles\PVZOnline.dir\src\LawnApp.cpp.obj CMakeFiles\PVZOnline.dir\src\dllmain.cpp.obj | libs\minhook\minhook.x32.lib || libs\minhook\minhook.x32.lib
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MD /O2 /Ob2 /DNDEBUG
   LINK_FLAGS = /machine:X86 /INCREMENTAL:NO
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\mod.dir
+  LINK_LIBRARIES = libs\minhook\minhook.x32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\PVZOnline.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   RESTAT = 1
-  TARGET_COMPILE_PDB = CMakeFiles\mod.dir\
-  TARGET_FILE = mod.dll
-  TARGET_IMPLIB = mod.lib
-  TARGET_PDB = mod.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\PVZOnline.dir\
+  TARGET_FILE = PVZOnline.dll
+  TARGET_IMPLIB = PVZOnline.lib
+  TARGET_PDB = PVZOnline.pdb
 
 
 #############################################
@@ -111,10 +138,161 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles\install.util: CUSTOM_COMMAND all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles\install\local.util: CUSTOM_COMMAND all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install\local: phony CMakeFiles\install\local.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/PVZOnline/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target minhook
+
+
+#############################################
+# Order-only phony target for minhook
+
+build cmake_object_order_depends_target_minhook: phony || libs\minhook\CMakeFiles\minhook.dir
+
+build libs\minhook\CMakeFiles\minhook.dir\src\buffer.c.obj: C_COMPILER__minhook_unscanned_Release C$:\PVZOnline\libs\minhook\src\buffer.c || cmake_object_order_depends_target_minhook
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG
+  INCLUDES = -IC:\PVZOnline\libs\minhook\include -IC:\PVZOnline\libs\minhook\src -IC:\PVZOnline\libs\minhook\src\hde
+  OBJECT_DIR = libs\minhook\CMakeFiles\minhook.dir
+  OBJECT_FILE_DIR = libs\minhook\CMakeFiles\minhook.dir\src
+  TARGET_COMPILE_PDB = libs\minhook\CMakeFiles\minhook.dir\minhook.pdb
+  TARGET_PDB = libs\minhook\minhook.x32.pdb
+
+build libs\minhook\CMakeFiles\minhook.dir\src\hook.c.obj: C_COMPILER__minhook_unscanned_Release C$:\PVZOnline\libs\minhook\src\hook.c || cmake_object_order_depends_target_minhook
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG
+  INCLUDES = -IC:\PVZOnline\libs\minhook\include -IC:\PVZOnline\libs\minhook\src -IC:\PVZOnline\libs\minhook\src\hde
+  OBJECT_DIR = libs\minhook\CMakeFiles\minhook.dir
+  OBJECT_FILE_DIR = libs\minhook\CMakeFiles\minhook.dir\src
+  TARGET_COMPILE_PDB = libs\minhook\CMakeFiles\minhook.dir\minhook.pdb
+  TARGET_PDB = libs\minhook\minhook.x32.pdb
+
+build libs\minhook\CMakeFiles\minhook.dir\src\trampoline.c.obj: C_COMPILER__minhook_unscanned_Release C$:\PVZOnline\libs\minhook\src\trampoline.c || cmake_object_order_depends_target_minhook
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG
+  INCLUDES = -IC:\PVZOnline\libs\minhook\include -IC:\PVZOnline\libs\minhook\src -IC:\PVZOnline\libs\minhook\src\hde
+  OBJECT_DIR = libs\minhook\CMakeFiles\minhook.dir
+  OBJECT_FILE_DIR = libs\minhook\CMakeFiles\minhook.dir\src
+  TARGET_COMPILE_PDB = libs\minhook\CMakeFiles\minhook.dir\minhook.pdb
+  TARGET_PDB = libs\minhook\minhook.x32.pdb
+
+build libs\minhook\CMakeFiles\minhook.dir\src\hde\hde32.c.obj: C_COMPILER__minhook_unscanned_Release C$:\PVZOnline\libs\minhook\src\hde\hde32.c || cmake_object_order_depends_target_minhook
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG
+  INCLUDES = -IC:\PVZOnline\libs\minhook\include -IC:\PVZOnline\libs\minhook\src -IC:\PVZOnline\libs\minhook\src\hde
+  OBJECT_DIR = libs\minhook\CMakeFiles\minhook.dir
+  OBJECT_FILE_DIR = libs\minhook\CMakeFiles\minhook.dir\src\hde
+  TARGET_COMPILE_PDB = libs\minhook\CMakeFiles\minhook.dir\minhook.pdb
+  TARGET_PDB = libs\minhook\minhook.x32.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target minhook
+
+
+#############################################
+# Link the static library libs\minhook\minhook.x32.lib
+
+build libs\minhook\minhook.x32.lib: C_STATIC_LIBRARY_LINKER__minhook_Release libs\minhook\CMakeFiles\minhook.dir\src\buffer.c.obj libs\minhook\CMakeFiles\minhook.dir\src\hook.c.obj libs\minhook\CMakeFiles\minhook.dir\src\trampoline.c.obj libs\minhook\CMakeFiles\minhook.dir\src\hde\hde32.c.obj
+  LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /MD /O2 /Ob2 /DNDEBUG
+  LINK_FLAGS = /machine:X86
+  OBJECT_DIR = libs\minhook\CMakeFiles\minhook.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = libs\minhook\CMakeFiles\minhook.dir\minhook.pdb
+  TARGET_FILE = libs\minhook\minhook.x32.lib
+  TARGET_PDB = libs\minhook\minhook.x32.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build libs\minhook\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz\libs\minhook && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build libs\minhook\edit_cache: phony libs\minhook\CMakeFiles\edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libs\minhook\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz\libs\minhook && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" --regenerate-during-build -SC:\PVZOnline -BC:\PVZOnline\pvz"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libs\minhook\rebuild_cache: phony libs\minhook\CMakeFiles\rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libs\minhook\list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libs\minhook\CMakeFiles\install.util: CUSTOM_COMMAND libs\minhook\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz\libs\minhook && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libs\minhook\install: phony libs\minhook\CMakeFiles\install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libs\minhook\CMakeFiles\install\local.util: CUSTOM_COMMAND libs\minhook\all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\PVZOnline\pvz\libs\minhook && "C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libs\minhook\install\local: phony libs\minhook\CMakeFiles\install\local.util
+
 # =============================================================================
 # Target aliases.
 
-build mod: phony mod.dll
+build PVZOnline: phony PVZOnline.dll
+
+build minhook: phony libs\minhook\minhook.x32.lib
+
+build minhook.x32.lib: phony libs\minhook\minhook.x32.lib
 
 # =============================================================================
 # Folder targets.
@@ -124,7 +302,14 @@ build mod: phony mod.dll
 #############################################
 # Folder: C:/PVZOnline/pvz
 
-build all: phony mod.dll
+build all: phony PVZOnline.dll libs\minhook\all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/PVZOnline/pvz/libs/minhook
+
+build libs\minhook\all: phony libs\minhook\minhook.x32.lib
 
 # =============================================================================
 # Built-in targets
@@ -133,14 +318,14 @@ build all: phony mod.dll
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:\PVZOnline\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:\PVZOnline\CMakeLists.txt C$:\PVZOnline\libs\minhook\CMakeLists.txt C$:\PVZOnline\libs\minhook\cmake\minhook-config.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:\PVZOnline\CMakeLists.txt C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake: phony
+build C$:\PVZOnline\CMakeLists.txt C$:\PVZOnline\libs\minhook\CMakeLists.txt C$:\PVZOnline\libs\minhook\cmake\minhook-config.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake C$:\Program$ Files\Microsoft$ Visual$ Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles\3.28.3-msvc11\CMakeCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeCXXCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeRCCompiler.cmake CMakeFiles\3.28.3-msvc11\CMakeSystem.cmake: phony
 
 
 #############################################
